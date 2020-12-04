@@ -1,0 +1,128 @@
+/** {
+    box-sizing: border-box;
+    colores
+
+    #FBECEC BEIGE
+    #91D18B GREEN
+    #E11D74 PINK
+    #440047 PURPLE
+    #EFBBCF STRONG_PINK
+}*/
+
+/* BACKGROUND COLORS */
+
+.bg-beige {
+    background-color: #FBECEC;
+}
+
+.bg-pink-light {
+    background-color: #EFBBCF;
+}
+
+.bg-pink {
+    background-color: #E11D74;
+}
+
+.bg-purple {
+    background-color: #440047;
+}
+
+.bg-green {
+    background-color: #91D18B;
+}
+
+/* TEXT COLORS */
+
+.text-purple {
+    color: #440047 !important;
+}
+
+.text-red {
+    color: #900;
+}
+/* * {
+    margin: 0;
+} */
+
+
+body {
+    font-family: 'Nunito';
+    /* padding: 10px; */
+    background-color: #FBECEC;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background-color: #efbbcf;
+    border-bottom: 8px solid #440047;
+    display: flex;
+}
+
+.header__h1 {
+    font-family: 'Balsamiq Sans';
+    font-size: 50px;
+    text-align: center;
+    color: #440047;
+    /* text-shadow: 2px 2px 5px #440047; */
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.header__img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+/* CAROUSEL */
+
+.my__carousel-item {
+    height: 400px;
+}
+
+@media only screen and (max-width: 670px) {
+    .my__carousel-item {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .my__carousel-item {
+        height: 200px;
+    }
+}
+
+.back-grad {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+
+/* FORMS */
+
+.form__label {
+    font-size: 24px;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+/* PRODUCT CARDS */
+
+.card-body img {
+    /* max-height: 350px;
+    max-width: 300px;
+    object-fit: cover; */
+}
