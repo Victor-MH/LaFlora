@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Flora</title>
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -42,16 +44,67 @@
         </div>
     </nav>
 
-    <!-- buscador -->
-    <form action="#" method="GET" class="my-4 mx-auto w-85 needs-validation">
-        <div class="form-row">
-            <div class="form-group col-12">
-                <label for="nopedido" class="font-weight-bold form__label">Número de pedido</label>
-                <input type="text" class="form-control" id="nopedido" name="pedido" placeholder="Ingresa el número de pedido aquí" required>
+    <main class="container-fluid">
+        
+        <!-- PRODUCTOS -->
+        <section>
+
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-between">
+
+                    <div>
+                        <h3>Número de Pedido:</h3>
+                    </div>
+                    <div>
+                        <h4><?php echo $_GET["numero"]; ?></h4>
+                    </div>
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-between">
+                    <div>
+                        <h3>Estatus:</h3>
+                    </div>
+                    <div>
+                        <h4><?php echo $_GET["estado"]; ?></h4>
+                    </div>
+                </div>
             </div>
-        </div>
-        <button class="btn bg-pink-light" type="submit">Buscar</button>
-    </form>
+
+
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 my-2 pt-3 bg-pink-light" >
+                    <h3>Productos:</h3>
+                    <div class="card-body">
+                        <img class="card-img-top w-50 p-1" src="<?php echo $_GET["imagen"]; ?>" alt="">
+                        <div>
+                            <h3 class="card-title"><?php echo $_GET["producto"]; ?></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-12 my-2">
+                    <h3 class="mb-3">Cantidad:</h3>
+                    <h4><?php echo $_GET["cantidad"]; ?> </h4>
+                </div>
+
+                <div class="col-md-3 col-sm-12 my-2">
+                    <h3 class="mb-3">Precio:</h3>
+                    <h4></h4>
+                </div>
+            </div>
+
+            <div class="row justify-content-end">
+                <!-- <div class="col-9"></div> -->
+                <div class="col-md-3 col-sm-4 col-xs-4">
+                    <h3 class="mb-3 ">Total:</h3>
+                    <h4></h4>
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
 
     <footer class="container-fluid mt-3 bg-pink-light pt-3">
         <div class="row">
@@ -75,7 +128,7 @@
                         </h3>
                         <h4>PayPal</h4>
                     </div>
-                    <div class="col-4 text-center text-purple">
+                    <div class="col-4 pr-0 text-center text-purple">
                         <h3 class="icono">
                             <i class="fas fa-money-bill-wave"></i>
                         </h3>
@@ -83,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12">
+            <div class="col-md-3 col-sm-12 pr-0 ">
                 <div class="row ml-3 mb-3">
                     <h3 class="text-purple"> <i class="fab fa-facebook-square"></i> Facebook</h3>
                     <h4 class="text-red pl-3">@facebook</h4>
@@ -95,6 +148,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

@@ -1,0 +1,60 @@
+{
+    "pedidos":[
+        {
+            "numero":"100123",
+            "estado":"Entregado",
+            "producto":"Ramo de 12 rosas rosas",
+            "precio":"$350.00",
+            "cantidad":"1",
+            "total":"$350.00",
+            "fecha_entrega":"14/02/2020 ",
+            "horario":"1:00pm",
+            "direccion":"Calle XYZ",
+            "receptor":"Irene Hernandez Ortiz",
+            "mensaje":"Te amo",
+            "imagen":"images/rosas_rosas.jpg"
+        },
+        {
+            "numero":"100345",
+            "estado":"Pendiente",
+            "producto":"Cruz de Flores",
+            "precio":"$1900.00",
+            "cantidad":"1",
+            "total":"$1900.00",
+            "fecha_entrega":"02/06/2020",
+            "horario":"8:00pm",
+            "direccion":"calle ZYX",
+            "receptor":"Juan Ortiz",
+            "mensaje":"Una gran persona, siento mucho su pérdida",
+            "imagen":"images/cruz.jpg"
+        },
+        {
+            "numero":"100678",
+            "estado":"Cancelado",
+            "producto":"Caja de chocolates",
+            "precio":"$330.00",
+            "cantidad":"1",
+            "total":"$330.00",
+            "fecha_entrega":"20/08/2020",
+            "horario":"11:00am",
+            "direccion":"calle ABC",
+            "receptor":"Carmen Díaz",
+            "mensaje":"Feliz cumpleaños",
+            "imagen":"images/chocolate.jpg"
+        },
+        {
+            "numero":"100912",
+            "estado":"Entregado",
+            "producto":"Jarrón con rosas y claveles",
+            "precio":"$480.00",
+            "cantidad":"1",
+            "total":"$480.00",
+            "fecha_entrega":"15/09/2020",
+            "horario":"2:00pm",
+            "direccion":"calle CBA",
+            "receptor":"Axel Robles",
+            "mensaje":"",
+            "imagen":"images/jarron.jpg"
+        }
+    ]
+}

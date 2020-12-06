@@ -1,0 +1,76 @@
+{
+    "productos":[
+        {
+            "ocasion":"amor",
+            "nombre":"Ramo de 12 rosas rosas",
+            "precio":"$350.00",
+            "imagen":"images/rosas_rosas.jpg"
+        },
+        {
+            "ocasion":"amor",
+            "nombre":"Ramo de 12 gerberas",
+            "precio":"$350.00",
+            "imagen":"images/gerbera.jpeg"
+        },
+        {
+            "ocasion":"amor",
+            "nombre":"Orquídea blanca",
+            "precio":"$599.00",
+            "imagen":"images/orquidea.jpg"
+        },
+        {
+            "ocasion":"amor",
+            "nombre":"Jarrón con rosas y claveles",
+            "precio":"$480.00",
+            "imagen":"images/jarron.jpg"
+        },
+        {
+            "ocasion":"condolencias",
+            "nombre":"Ramo de 12 rosas blancas",
+            "precio":"$399.00",
+            "imagen":"images/rosas_blancas.jpg"
+        },
+        {
+            "ocasion":"condolencias",
+            "nombre":"Corona Mediana",
+            "precio":"$1200.00",
+            "imagen":"images/corona_mediana.jpg"
+        },
+        {
+            "ocasion":"condolencias",
+            "nombre":"Corona Grande",
+            "precio":"$1700.00",
+            "imagen":"images/corona_grande.jpg"
+        },
+        {
+            "ocasion":"condolencias",
+            "nombre":"Cruz de Flores",
+            "precio":"$1900.00",
+            "imagen":"images/cruz.jpg"
+        },
+        {
+            "ocasion":"cumpleaños",
+            "nombre":"Rosa en Caja",
+            "precio":"$160.00",
+            "imagen":"images/caja_rosas.jpg"
+        },
+        {
+            "ocasion":"cumpleaños",
+            "nombre":"Oso de peluche",
+            "precio":"$250.00",
+            "imagen":"images/oso.jpg"
+        },
+        {
+            "ocasion":"cumpleaños",
+            "nombre":"Caja de chocolates",
+            "precio":"$330.00",
+            "imagen":"images/chocolate.jpg"
+        },
+        {
+            "ocasion":"cumpleaños",
+            "nombre":"Ramo de Rosas y Lilys",
+            "precio":"$389.00",
+            "imagen":"images/lily.jpg"
+        }
+    ]
+}
