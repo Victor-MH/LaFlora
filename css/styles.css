@@ -119,10 +119,11 @@ body {
     width: 85%;
 }
 
-/* PRODUCT CARDS */
 
-.card-body img {
-    /* max-height: 350px;
-    max-width: 300px;
-    object-fit: cover; */
+@media (max-width: 575px){
+    .col-xs-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
 }
