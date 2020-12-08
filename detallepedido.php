@@ -47,7 +47,7 @@
     <main class="container-fluid">
         
         <!-- PRODUCTOS -->
-        <section>
+        <section id="pedidos">
 
             <div class="row">
                 <div class="col-6 d-flex flex-column justify-content-between">
@@ -56,7 +56,7 @@
                         <h3>Número de Pedido:</h3>
                     </div>
                     <div>
-                        <h4><?php echo $_GET["numero"]; ?></h4>
+                        <h4 id="numero"><?php echo $_GET["numero"]; ?></h4>
                     </div>
                 </div>
                 <div class="col-6 d-flex flex-column justify-content-between">
@@ -64,7 +64,7 @@
                         <h3>Estatus:</h3>
                     </div>
                     <div>
-                        <h4><?php echo $_GET["estado"]; ?></h4>
+                        <h4 id="estado"> </h4>
                     </div>
                 </div>
             </div>
@@ -72,37 +72,60 @@
 
 
             <div class="row">
-                <div class="col-md-6 col-sm-12 my-2 pt-3 bg-pink-light" >
+                <div class="col-md-6 col-sm-12 mt-2 pt-3 bg-pink-light" >
                     <h3>Productos:</h3>
                     <div class="card-body">
-                        <img class="card-img-top w-50 p-1" src="<?php echo $_GET["imagen"]; ?>" alt="">
+                        <img id="imagen" class="card-img-top w-50 p-1" src="" alt="">
                         <div>
-                            <h3 class="card-title"><?php echo $_GET["producto"]; ?></h3>
+                            <h3 class="card-title" id="producto"> </h3>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-12 my-2">
+                <div class="col-md-3 col-sm-12 mt-2">
                     <h3 class="mb-3">Cantidad:</h3>
-                    <h4><?php echo $_GET["cantidad"]; ?> </h4>
+                    <h4 id="cantidad"> </h4>
                 </div>
 
-                <div class="col-md-3 col-sm-12 my-2">
+                <div class="col-md-3 col-sm-12 mt-2">
                     <h3 class="mb-3">Precio:</h3>
-                    <h4></h4>
+                    <h4 id="precio"> </h4>
                 </div>
             </div>
 
-            <div class="row justify-content-end">
-                <!-- <div class="col-9"></div> -->
+            <div class="row justify-content-end mb-5 bg-pink-light">
                 <div class="col-md-3 col-sm-4 col-xs-4">
                     <h3 class="mb-3 ">Total:</h3>
-                    <h4></h4>
+                    <h4 id="total"> </h4>
                 </div>
             </div>
 
+            <div class="row mb-0">
+                <div class="col-md-3 py-2 d-flex flex-column justify-content-between bg-pink-light">
+                    <h3 class="mb-3">Fecha de entrega:</h3>
+                    <h4 id="fecha"> </h4>
+                </div>
+                <div class="col-md-3 py-2 d-flex flex-column justify-content-between">
+                    <h3 class="mb-3">Horario:</h3>
+                    <h4 id="horario"> </h4>
+                </div>
+                <div class="col-md-3 py-2 d-flex flex-column justify-content-between bg-pink-light">
+                    <h3 class="mb-3">Dirección:</h3>
+                    <h4 id="direccion"></h4>
+                </div>
+                <div class="col-md-3 py-2 d-flex flex-column justify-content-between">
+                    <h3 class="mb-3">Nombre de quien recibe:</h3>
+                    <h4 id="receptor"> </h4>
+                </div>
+            </div>
 
-
+            <div class="row">
+                <div class="col-12 text-wrap py-2 d-flex flex-column justify-content-between bg-pink-light">
+                    <h3>Mensaje Personalizado:</h3>
+                    <h4 class="text-break" id="mensaje"> </h4>
+                </div>
+            </div>
+            
         </section>
     </main>
 
@@ -148,5 +171,7 @@
             </div>
         </div>
     </footer>
+    
+    <script src="js/pedido.js"></script>
 </body>
 </html>

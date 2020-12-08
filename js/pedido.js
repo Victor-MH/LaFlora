@@ -34,8 +34,6 @@ window.onload = function() {
 
         
         var num = numero.innerHTML;
-        console.log(data);
-        console.log(num);
         var existe = false;
 
         for(var i in data) {
@@ -44,7 +42,7 @@ window.onload = function() {
                 existe = true;
                 estado.innerHTML = data[i].estado;
                 producto.innerHTML = data[i].producto;
-                cantidad.innerHTML = data[i].cantidad + " unidades";
+                cantidad.innerHTML = data[i].cantidad + " unidad";
                 precio.innerHTML = data[i].precio;
                 total.innerHTML = data[i].total;
                 fecha.innerHTML = data[i].fecha_entrega;
@@ -58,24 +56,13 @@ window.onload = function() {
         
         if(!existe) {
             var elemento = `
-            <div class="row">
-                <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="row justify-content-center bg-pink">
                     <div>
-                        <h3>Número de Pedido:</h3>
+                        <h2 class="my-2">No se encontraron coincidencias</h2>
                     </div>
-                    <div>
-                        <h4 id="numero">${num}</h4>
-                    </div>
-                </div>
-                <div class="col-6 d-flex flex-column justify-content-between">
-                    <div>
-                        <h3>No se encontraron coincidencias</h3>
-                    </div>
-                    
-                </div>
-            </div>`;
+                </div>`
             
-            ped_sec.innerHTML = elemento;
+            ped_sec.innerHTML += elemento;
         }
     }
 }
